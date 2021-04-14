@@ -189,17 +189,17 @@ STRINGS:
     emoji_not_allowed: "I'm sorry, but admin roles can't have emojis 😞"
 
   pm_menu:
-    start_hi_group: 'Hey there! My name is Daisy'
-    start_hi: "Hey there! My name is <b>Daisy.</b>\nI can help manage your groups with useful features, feel free to add me to your groups!"
-    btn_source: "📜 Source code"
+    start_hi_group: 'Hey there! My name is SoFia 💙'
+    start_hi: "Hey there! My name is <b>SoFia.</b>\nFully AI based Advanced Telegram Group Management Bot 💙.</b>\nI can help manage your groups with useful features, feel free to add me to your groups!"
+    btn_source: "🛠 Source code ⚒"
     btn_help: "❔ Help"
     btn_lang: "🇺🇸 Language"
-    btn_channel: "🙋‍♀️ Daisy News"
+    btn_channel: "💙 Daisy News"
     btn_group_help: "Click me for help!"
     back: Back
 
     # /help
-    help_header: "Hi Boss! I'm <b>Daisy</b>. An anime themed super powerful group management bot with many handy tools. So why are you waiting. Let me to assist you"
+    help_header: "Hi Boss! I'm <b>SoFia 💙</b>. An anime themed super powerful group management bot with many handy tools. So why are you waiting. Let me to assist you"
     click_btn: Click here
 
   disable:
@@ -484,8 +484,8 @@ STRINGS:
     cant_find_chat_use_id: "I can't find this chat. Use chat ID."
     bad_arg_bool: "Bad choice: supported only <code>on</code>/<code>off</code> <code>enable</code>/<code>disable</code>"
 
-    enabled: enabled
-    disabled: disabled
+    enabled: enabled ✅ 
+    disabled: disabled ❎
     chat_users_connections_info: "Connections for normal users currently is <b>{status}</b> for <b>{chat_name}</b>"
     chat_users_connections_cng: "Connections for normal users changed to <b>{status}</b> for <b>{chat_name}</b>"
 
@@ -521,8 +521,8 @@ STRINGS:
     no_reply_msg: "Reply to a message to pin!"
     chat_not_modified_pin: "That message is already pinned!"
     chat_not_modified_unpin: "There isn't any pinned message to unpin!"
-    pinned_success: "Successfully pinned!"
-    unpin_success: "Successfully unpinned!"
+    pinned_success: "Successfully pinned! ✅"
+    unpin_success: "Successfully unpinned! ❎"
   users:
     user_info: "<b>User info:</b>\n"
     info_id: "ID: <code>{id}</code>"
@@ -561,7 +561,7 @@ STRINGS:
     kick_DaisyX: Instead of trying kick me you could spend your time better. Thats just boring.
     kick_admin: Kicking admin is not best idea thought.
     kick_self: If you want to kick yourself - just leave this chat. I would rather not see you than look at these pathetic attempts at self-punishment.
-    user_kicked: "{user} was kicked by {admin} in {chat_name}."
+    user_kicked: "{user} was kicked ⛔️ by {admin} in {chat_name}."
 
     # Mutes
     mute_DaisyX: Actually, I'll be happy to shut up you instead.
@@ -574,7 +574,7 @@ STRINGS:
     user_unmuted: "{user} was unmuted by {admin} in {chat_name}."
 
     # Bans
-    ban_DaisyX: No, I won't do it! Ask the chat creator to do it!
+    ban_SoFiax: No, I won't do it! Ask the chat creator to do it!
     ban_admin: Haha, let's <code>/demote</code> him first.
     ban_self: Why are you trying to ban yourself?
     user_banned: "{user} was banned by {admin} in {chat_name}."
@@ -637,8 +637,8 @@ STRINGS:
 
     # /turnwelcome
     turnwelcome_status: Welcomes are <code>{status}</code> in <b>{chat_name}</b>
-    turnwelcome_enabled: Welcomes enabled in <b>%s</b>
-    turnwelcome_disabled: Welcomes disabled in <b>%s</b>
+    turnwelcome_enabled: Welcomes enabled ✅ in <b>%s</b>
+    turnwelcome_disabled: Welcomes disabled ❎ in <b>%s</b>
 
     # /welcome
     enabled: enabled
@@ -665,23 +665,23 @@ STRINGS:
     del_security_note_ok: Security text was reset to default in <b>%s</b>
 
     # /cleanwelcome
-    cleanwelcome_enabled: Cleaning welcomes enabled in <b>%s</b>
-    cleanwelcome_disabled: Cleaning welcomes disabled in <b>%s</b>
+    cleanwelcome_enabled: Cleaning welcomes enabled ✅ in <b>%s</b>
+    cleanwelcome_disabled: Cleaning welcomes disabled ❎in <b>%s</b>
     cleanwelcome_status: Cleaning welcomes is <code>{status}</code> in <b>{chat_name}</b>
 
     # /cleanservice
-    cleanservice_enabled: Cleaning service messages enabled in <b>%s</b>
-    cleanservice_disabled: Cleaning service messages disabled in <b>%s</b>
+    cleanservice_enabled: Cleaning service messages enabled ✅ in <b>%s</b>
+    cleanservice_disabled: Cleaning service messages disabled ❎ in <b>%s</b>
     cleanservice_status: Cleaning service messages is <code>{status}</code> in <b>{chat_name}</b>
 
     # /welcomemute
     welcomemute_invalid_arg: Invalid argument, expected a time.
-    welcomemute_enabled: Welcome mute enabled in <b>%s</b>
-    welcomemute_disabled: Welcome mute disabled in <b>%s</b>
+    welcomemute_enabled: Welcome mute enabled ✅ in <b>%s</b>
+    welcomemute_disabled: Welcome mute disabled ❎ in <b>%s</b>
     welcomemute_status: Welcome mute is <code>{status}</code> in <b>{chat_name}</b>
 
     # /welcomesecurity
-    welcomesecurity_enabled: Welcome security enabled in <b>{chat_name}</b> to <code>{level}</code>.
+    welcomesecurity_enabled: Welcome security enabled ✅ in <b>{chat_name}</b> to <code>{level}</code>.
     welcomesecurity_enabled:customized_time: |
       Welcome security enabled in <b>{chat_name}</b> to <code>{level}</code>, and kick users which aren't verified within {time}.
     ask_for_time_customization: |
@@ -689,7 +689,7 @@ STRINGS:
     send_time: Please specify a time.
     invalid_time: "Invalid time!"
     welcomesecurity_enabled_word: enabled, set to level {level}
-    welcomesecurity_disabled: Welcome security disabled in <b>%s</b>.
+    welcomesecurity_disabled: Welcome security disabled ❎ in <b>%s</b>.
     welcomesecurity_invalid_arg: Invalid argument, expected <code>button</code>/<code>captcha</code>.
     welcomesecurity_status: Welcome security is <code>{status}</code> in <b>{chat_name}</b>
 
