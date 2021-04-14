@@ -42,13 +42,15 @@ def help_markup(modules):
 
 STICKERS = (
     "CAACAgUAAxkBAAECKtRgdAX3kP4b4fAqHH7H7N1PPGgpCwACBQIAApM9gVfFSzFaRL5s3B4E",
-    "CAACAgUAAxkBAAJOGmBeli95P073FKVkgc4esfKE4UlXAAIOAgACyavAVkbLMIidWYdyHgQ",
-    "CAACAgUAAxkBAAJOG2BeljABwlCfwzHT1gzyiciBri6_AAIsAgACXBPBVgpGQRz-1qmlHgQ",
-    "CAACAgUAAxkBAAJOHGBeljOJ35CQNnkpnVcgRoHuJX6DAAL3AQACN8TBVm1PIART01cWHgQ",
-    "CAACAgUAAxkBAAJOHmBeljjU0_FT_QpdUUJBqVUC0nfJAAKYAgACJ_jBVvntHY_8WF27HgQ",
-    "CAACAgUAAxkBAAJOH2BeljrV68mPLu8_6n4edT20Q3IQAAJ9AgACq3LBVmLuZuNPlvkfHgQ",
-    "CAACAgUAAxkBAAJOIGBeljttuniUPykRtzkSZj3SRwKJAAI7AgACNm_BVp8TCkE6ZqCoHgQ",
-    "CAACAgUAAxkBAAJOIWBelj-P_2vtVqtkF2OMlVN3M0N4AAK3AQACSm3BVkXF2voraS2tHgQ",
+    "CAACAgIAAxkBAAECLv1gdw3sEwUffY3-Iv-2qSB9Pm_IBAACgAQAAsxUSQmHysWoxA_mRx8E",
+    "CAACAgUAAxkBAAECLv9gdw4UEyoZEc7EmWog9c2Bog45ZwACmAIAAif4wVb57R2P_Fhdux8E",
+    "CAACAgUAAxkBAAECLwFgdw4n5uch4Qk1sUWe23YzRnOPmgACAwIAAnkTwFZJ9BvTjtSTPB8E",
+    "CAACAgUAAxkBAAECLwNgdw40mPhpXkBCmAIzozwXyZIk7AACDgIAAsmrwFZGyzCInVmHch8E",
+    "CAACAgEAAxkBAAECLwdgdw7AWdUoOzI7bJWIgfFFKfhxiAAC6AkAAr-MkATrjO4JGLm9tx8E",
+    "CAACAgEAAxkBAAECLwlgdw7GlQzSg2V48rJJfIF41cplagACEQoAAr-MkASISBCnsWHtXR8E",
+    "CAACAgIAAxkBAAECLwtgdw7jnLB7b_iyWjtJAAGYJiwgOmIAAjUBAAIw1J0RtLg1_WagtnwfBA",
+    "CAACAgIAAxkBAAECKy1gdEkP73M3oq9l_T7EO0Iumi93UAACVAADQbVWDGq3-McIjQH6HgQ",
+    "CAACAgIAAxkBAAECKylgdEj2m6gueJVszgXaTKOIlih28wACKQEAAhZCawqscJjQ9N192B4E",
 )
 
 
@@ -141,7 +143,7 @@ async def helpmenu_callback(query, callback_data=None, **kwargs):
     msg = f"Help for <b>{mod}</b> module:\n"
     msg += f"{MOD_HELP[mod]}"
     button = InlineKeyboardMarkup().add(
-        InlineKeyboardButton(text="⬅️ Back", callback_data="get_help")
+        InlineKeyboardButton(text=" ⬅️ Back", callback_data="get_help")
     )
     with suppress(MessageNotModified):
         await query.message.edit_text(
